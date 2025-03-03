@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Ms. O'Gilvie</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Water Lilly Consulting</h1>
+        <nav>
+            <a href="introduction.html">About Ms. O'Gilvie</a>
+            <a href="../index.html">Home</a>
+            <a href="zoom.html">Consultations</a>
+        </nav>
+    </header>
+    <main>
+        <section class="fade-in">
+            <h2>About Ms. O'Gilvie</h2>
+            <img src="../resources/123709757_10221703292203699_2868610026791546887_n.jpg" alt="Ms. O'Gilvie" class="profile-pic" />
+            <p>Ms. O'Gilvie is a dedicated professional with extensive experience in online education and consulting. She is committed to providing the best services to her clients, leveraging her expertise in virtual learning environments and educational technology.</p>
+            <h2>Credentials</h2>
+            <ul>
+                <li>Ph.D. in Organization and Management: Executive Coaching (In Progress), Liberty University</li>
+                <li>M.A. in Organizational Leadership: Human Resources, Claremont Lincoln University</li>
+                <li>B.S. in Interdisciplinary Studies: Social Studies and Behavioral Studies, Liberty University</li>
+                <li>Chief Administrative Manager - Medical Student Scholarship, University of Washington School of Medicine</li>
+                <li>6th & 7th Grade Intensive Reading Teacher, Orange County Public Schools</li>
+                <li>Published author in educational journals</li>
+                <li>Passionate Social Justice Idealist Leader and an expert in Organizational Leadership, Executive Coaching, Healthcare, Social Justice, & Educational Advocacy</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ms. O'Gilvie. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInSection = document.querySelector('.fade-in');
+            setTimeout(() => {
+                fadeInSection.classList.add('visible');
+            }, 100); // Delay to ensure the transition is visible
+        });
+    </script>
+</body>
+</html>
